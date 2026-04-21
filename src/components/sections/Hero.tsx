@@ -47,8 +47,8 @@ export function Hero() {
           <div 
              className="w-full h-full relative overflow-hidden flex items-center justify-center z-10"
              style={{ 
-               maskImage: "radial-gradient(circle at center, black 30%, transparent 70%)", 
-               WebkitMaskImage: "radial-gradient(circle at center, black 30%, transparent 70%)" 
+               maskImage: "radial-gradient(circle at center, black 60%, transparent 95%)", 
+               WebkitMaskImage: "radial-gradient(circle at center, black 60%, transparent 95%)" 
              }}
           >
              {/* The Master Shot */}
@@ -78,7 +78,7 @@ export function Hero() {
             transition={{ duration: 1.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
             className="text-center w-full flex flex-col items-center"
           >
-            <h1 className="font-serif text-[clamp(2rem,7vw,7rem)] xl:text-[8rem] font-light tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-[#ffffff] via-white/90 to-[#111111] leading-[0.9] pb-2" style={{ textShadow: "0 20px 50px rgba(0,0,0,0.8)" }}>
+            <h1 className="font-serif text-[clamp(2.5rem,8vw,5.5rem)] xl:text-[6.5rem] font-light tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-[#ffffff] via-white/90 to-[#111111] leading-[0.9] pb-2" style={{ textShadow: "0 20px 50px rgba(0,0,0,0.8)" }}>
               Muhammad<span className="italic font-normal">binbasheer</span>
             </h1>
             
