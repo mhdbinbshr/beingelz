@@ -99,7 +99,7 @@ export function Hero() {
              initial={{ opacity: 0, rotateX: 30, y: 30, filter: "blur(15px)" }}
              animate={{ opacity: 1, rotateX: 0, y: 0, filter: "blur(0px)" }}
              transition={{ duration: 3, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-             className="relative flex items-center justify-center flex-nowrap whitespace-nowrap gap-1.5 sm:gap-3 md:gap-6 lg:gap-10 font-sans text-[6px] sm:text-[8px] md:text-xs lg:text-sm uppercase tracking-[0.1em] sm:tracking-[0.2em] md:tracking-[0.4em] lg:tracking-[0.6em] w-full"
+             className="relative flex items-center justify-center flex-nowrap whitespace-nowrap gap-1 sm:gap-2 md:gap-4 lg:gap-6 font-sans text-[6px] sm:text-[8px] md:text-[10px] lg:text-[11px] xl:text-xs uppercase tracking-[0.1em] sm:tracking-[0.2em] md:tracking-[0.3em] lg:tracking-[0.4em] xl:tracking-[0.5em] w-full"
           >
              {/* Deep Ambient Background Glow */}
              <motion.div 
@@ -109,7 +109,7 @@ export function Hero() {
              />
 
              {["Entrepreneur", "Filmmaker", "Architect", "Cyber Offense"].map((word, idx, arr) => (
-               <div key={word} className="flex items-center flex-nowrap whitespace-nowrap gap-1.5 sm:gap-3 md:gap-6 lg:gap-10">
+               <div key={word} className="flex items-center flex-nowrap whitespace-nowrap gap-1 sm:gap-2 md:gap-4 lg:gap-6">
                  {/* Individual Word Breathing Effect */}
                  <motion.span 
                    animate={{ color: ["rgba(255,255,255,0.3)", "rgba(255,255,255,1)", "rgba(255,255,255,0.3)"] }}
@@ -127,12 +127,12 @@ export function Hero() {
                    <div className="relative flex items-center justify-center shrink-0">
                      {/* Core optical beam */}
                      <motion.div 
-                       animate={{ opacity: [0.1, 0.9, 0.1], height: ["6px", "16px", "6px"] }}
+                       animate={{ opacity: [0.1, 0.9, 0.1], height: ["2px", "10px", "2px"] }}
                        transition={{ duration: 4, delay: idx * 0.8, repeat: Infinity, ease: "easeInOut" }}
                        className="w-[1px] bg-white mix-blend-screen shadow-[0_0_10px_rgba(255,255,255,0.8)]"
                      />
                      {/* Orange Light Leak Base */}
-                     <div className="absolute w-[2px] h-[20px] bg-[var(--color-accent)]/30 blur-[4px] pointer-events-none" />
+                     <div className="absolute w-[2px] h-[14px] bg-[var(--color-accent)]/30 blur-[4px] pointer-events-none" />
                    </div>
                  )}
                </div>
