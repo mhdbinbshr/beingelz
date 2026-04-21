@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { motion } from 'motion/react';
 
-export function Loader({ onComplete }: { onComplete: () => void }) {
+export function Loader({ onComplete }: { onComplete: () => void, key?: string }) {
   useEffect(() => {
     // 4.5 seconds of total cinematic load time
     const timer = setTimeout(() => onComplete(), 4500); 
@@ -19,9 +19,6 @@ export function Loader({ onComplete }: { onComplete: () => void }) {
         transition: { duration: 2, ease: [0.76, 0, 0.24, 1] }
       }}
     >
-      {/* Heavy Cinematic Noise */}
-      <div className="absolute inset-0 opacity-[0.05] mix-blend-screen pointer-events-none z-0" style={{ backgroundImage: "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E')" }} />
-
       {/* Floating Light Leak */}
       <motion.div 
          animate={{ opacity: [0, 0.2, 0], scale: [0.8, 1.2, 0.8] }}

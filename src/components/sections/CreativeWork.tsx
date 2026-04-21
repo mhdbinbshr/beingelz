@@ -27,9 +27,6 @@ export function CreativeWork() {
       <div className="absolute top-0 right-[10%] w-[120%] h-[150%] max-w-[1500px] bg-[conic-gradient(from_200deg_at_100%_0%,_transparent_0%,_var(--color-accent)_10%,_transparent_20%)] opacity-[0.07] pointer-events-none -z-10 mix-blend-screen" />
       <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-[var(--color-accent)]/20 blur-[200px] rounded-full pointer-events-none mix-blend-screen opacity-40 z-0" />
       
-      {/* Animated Film Scratches / Grain overlay */}
-      <div className="absolute inset-0 opacity-[0.04] pointer-events-none z-0" style={{ backgroundImage: "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.9%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E')" }}></div>
-
       <div className="container mx-auto px-6 max-w-7xl relative z-10">
         
         {/* Preserved Single-Line Title */}

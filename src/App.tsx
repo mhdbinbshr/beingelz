@@ -52,9 +52,10 @@ function AnimatedRoutes() {
   const location = useLocation();
   
   return (
-    <AnimatePresence mode="sync">
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={
+    <AnimatePresence mode="wait">
+      <motion.div key={location.pathname} initial={{ opacity: 1 }} exit={{ opacity: 0 }}>
+        <Routes location={location}>
+          <Route path="/" element={
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, filter: 'blur(10px)' }} transition={{ duration: 0.8 }}>
             <Hero />
           </motion.div>
@@ -90,6 +91,7 @@ function AnimatedRoutes() {
           </motion.div>
         } />
       </Routes>
+      </motion.div>
     </AnimatePresence>
   );
 }
@@ -105,7 +107,9 @@ export default function App() {
       </div>
 
       <AnimatePresence mode="wait">
-        {loading && <Loader key="loader" onComplete={() => setLoading(false)} />}
+        {loading ? (
+          <Loader key="loader" onComplete={() => setLoading(false)} />
+        ) : null}
       </AnimatePresence>
 
       {!loading && (

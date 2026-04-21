@@ -31,13 +31,8 @@ export function Hero() {
         className="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] bg-[conic-gradient(from_0deg_at_50%_50%,_transparent_0%,_var(--color-accent)_5%,_transparent_15%,_transparent_50%,_var(--color-accent)_55%,_transparent_65%)] opacity-[0.04] mix-blend-screen pointer-events-none -z-10"
       />
 
-      {/* Base Film Noise */}
-      <div className="absolute inset-0 opacity-[0.03] mix-blend-screen pointer-events-none z-0" style={{ backgroundImage: "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E')" }} />
-
-      {/* 2. THE CONTENT */}
       <div className="container mx-auto px-4 sm:px-6 z-10 flex flex-col items-center justify-center w-full relative">
         
-        {/* Director Profile / Cinematic Fading Master Shot */}
         <motion.div
            initial={{ opacity: 0, scale: 0.9, y: 20, filter: "blur(20px)" }}
            animate={{ opacity: 1, scale: 1, y: 0, filter: "blur(0px)" }}
@@ -45,10 +40,10 @@ export function Hero() {
            className="relative w-64 h-80 md:w-80 md:h-96 lg:w-[400px] lg:h-[500px] mb-8 md:mb-10 group"
         >
           <div 
-             className="w-full h-full relative overflow-hidden flex items-center justify-center z-10"
+             className="w-full h-full relative flex items-center justify-center z-10"
              style={{ 
-               maskImage: "radial-gradient(circle at center, black 60%, transparent 95%)", 
-               WebkitMaskImage: "radial-gradient(circle at center, black 60%, transparent 95%)" 
+               maskImage: "radial-gradient(circle at center, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 80%)", 
+               WebkitMaskImage: "radial-gradient(circle at center, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 80%)" 
              }}
           >
              {/* The Master Shot */}
@@ -58,7 +53,7 @@ export function Hero() {
                 initial={{ scale: 1.1, filter: "brightness(0)" }}
                 animate={{ scale: 1, filter: "brightness(1)", opacity: [0, 1] }}
                 transition={{ duration: 4, ease: "easeOut" }}
-                className="w-full h-full object-cover filter grayscale-[0.2] contrast-[1.1] brightness-[1.1] group-hover:grayscale-0 group-hover:brightness-125 transition-all duration-[2s] ease-out object-center mix-blend-screen"
+                className="w-full h-full object-cover filter grayscale-[0.2] contrast-[1.1] brightness-[1.1] group-hover:grayscale-0 group-hover:brightness-125 transition-all duration-[2s] ease-out object-center"
                 referrerPolicy="no-referrer"
              />
 
