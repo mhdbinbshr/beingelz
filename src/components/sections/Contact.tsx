@@ -74,14 +74,14 @@ export function Contact() {
                   href={endpoint.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative flex flex-col md:flex-row items-start md:items-center justify-between p-8 md:p-12 lg:p-14 rounded-[2rem] bg-white/[0.015] border border-white/5 hover:bg-white/[0.03] hover:border-[var(--color-accent)]/30 transition-all duration-700 overflow-hidden isolate shadow-2xl hover:shadow-[0_30px_100px_rgba(0,0,0,0.8)]"
+                  className="group relative flex flex-col md:flex-row items-start md:items-center justify-between p-6 md:p-10 lg:p-12 xl:p-10 rounded-[2rem] bg-white/[0.015] border border-white/5 hover:bg-white/[0.03] hover:border-[var(--color-accent)]/30 transition-all duration-700 overflow-hidden isolate shadow-2xl hover:shadow-[0_30px_100px_rgba(0,0,0,0.8)]"
                 >
                    {/* Laser Sweep Layer */}
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[var(--color-accent)]/10 to-transparent -translate-x-[150%] group-hover:translate-x-[150%] transition-transform duration-[2s] ease-in-out pointer-events-none -z-10" />
 
-                  <div className="flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-12 w-full">
+                  <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10 w-full">
                      {/* Mechanical Icon Pod */}
-                     <div className="w-20 h-20 lg:w-28 lg:h-28 rounded-[1.5rem] border border-white/5 bg-black/60 flex items-center justify-center text-white/20 group-hover:text-[var(--color-accent)] group-hover:border-[var(--color-accent)]/40 group-hover:scale-110 group-hover:shadow-[inset_0_0_30px_rgba(242,125,38,0.1)] transition-all duration-700 shrink-0 relative overflow-hidden">
+                     <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-20 xl:h-20 rounded-[1.5rem] border border-white/5 bg-black/60 flex items-center justify-center text-white/20 group-hover:text-[var(--color-accent)] group-hover:border-[var(--color-accent)]/40 group-hover:scale-110 group-hover:shadow-[inset_0_0_30px_rgba(242,125,38,0.1)] transition-all duration-700 shrink-0 relative overflow-hidden">
                        <div className="absolute inset-0 bg-[var(--color-accent)]/0 group-hover:bg-[var(--color-accent)]/10 transition-colors duration-700" />
                        {endpoint.icon}
                      </div>
@@ -94,7 +94,7 @@ export function Contact() {
                          <span className="h-[1px] w-8 bg-white/10 group-hover:w-24 group-hover:bg-[var(--color-accent)]/50 transition-all duration-1000 ease-out" />
                        </div>
 
-                       <h3 className="font-serif text-[clamp(1.2rem,3.5vw,4.5rem)] text-white/60 group-hover:text-white transition-all duration-700 font-light tracking-tighter leading-[1.1] group-hover:translate-x-2 sm:group-hover:translate-x-4 ease-out truncate block overflow-hidden max-w-[90vw]">
+                       <h3 className="font-serif text-[clamp(1rem,3vw,3.5rem)] text-white/60 group-hover:text-white transition-all duration-700 font-light tracking-tighter leading-[1.1] group-hover:translate-x-2 sm:group-hover:translate-x-4 ease-out truncate block overflow-hidden max-w-[90vw]">
                          {endpoint.value}
                        </h3>
                        

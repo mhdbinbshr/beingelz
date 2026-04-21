@@ -34,26 +34,26 @@ export function Hero() {
       <div className="container mx-auto px-4 sm:px-6 z-10 flex flex-col items-center justify-center w-full relative">
         
         <motion.div
-           initial={{ opacity: 0, scale: 0.9, y: 20, filter: "blur(20px)" }}
+           initial={{ opacity: 0, scale: 0.95, y: 30, filter: "blur(30px)" }}
            animate={{ opacity: 1, scale: 1, y: 0, filter: "blur(0px)" }}
-           transition={{ duration: 3.5, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
-           className="relative w-64 h-80 md:w-80 md:h-96 lg:w-[400px] lg:h-[500px] mb-8 md:mb-10 group"
+           transition={{ duration: 4, ease: [0.16, 1, 0.3, 1], delay: 0.5 }}
+           className="relative w-72 h-80 md:w-96 md:h-[450px] lg:w-[450px] lg:h-[550px] mb-8 md:mb-12 group flex items-center justify-center p-4"
         >
           <div 
              className="w-full h-full relative flex items-center justify-center z-10"
              style={{ 
-               maskImage: "radial-gradient(circle at center, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 80%)", 
-               WebkitMaskImage: "radial-gradient(circle at center, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 80%)" 
+               maskImage: "radial-gradient(circle at center, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 75%)", 
+               WebkitMaskImage: "radial-gradient(circle at center, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 75%)" 
              }}
           >
              {/* The Master Shot */}
              <motion.img 
                 src="https://ik.imagekit.io/dto1zguat/IMG_20260222_203102.png" 
                 alt="Director Profile"
-                initial={{ scale: 1.1, filter: "brightness(0)" }}
-                animate={{ scale: 1, filter: "brightness(1)", opacity: [0, 1] }}
-                transition={{ duration: 4, ease: "easeOut" }}
-                className="w-full h-full object-cover filter grayscale-[0.2] contrast-[1.1] brightness-[1.1] group-hover:grayscale-0 group-hover:brightness-125 transition-all duration-[2s] ease-out object-center"
+                initial={{ scale: 1.15, filter: "brightness(0) contrast(1.5)" }}
+                animate={{ scale: 1, filter: "brightness(1.1) contrast(1.1)", opacity: [0, 1] }}
+                transition={{ duration: 5, ease: "easeOut" }}
+                className="w-full h-full object-contain filter grayscale-[0.3] brightness-[1.1] group-hover:grayscale-0 group-hover:brightness-125 transition-all duration-[3s] ease-out mix-blend-screen"
                 referrerPolicy="no-referrer"
              />
 
